@@ -8,66 +8,26 @@
 
 #import <Foundation/Foundation.h>
 
-// -- 인터페이스 부분 --
-@interface Fraction : NSObject
-- (void)print;
-
-// Setter Method
-- (void)setNumerator:(int) n;
-- (void)setDenominator:(int) d;
-
-// Getter Method
-- (int)numerator;
-- (int)denominator;
-@end
-
-// -- 구현/실행 정의 부분 --
-@implementation Fraction
-{
-    int numerator;
-    int denominator;
-}
-
-- (void)print   // Method
-{
-    NSLog(@"%i/%i", numerator, denominator);
-}
-
-- (void)setNumerator:(int)n     // Setter Method
-{
-    numerator = n;
-}
-
-- (void)setDenominator:(int)d   // Setter Method
-{
-    denominator = d;
-}
-
-- (int)numerator                // Getter Method
-{
-    return numerator;
-}
-
-- (int)denominator              // Getter Method
-{
-    return denominator;
-}
-@end
-
-
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-
-        Fraction *myFraction = [[Fraction alloc] init];
         
-        // 1/3로 분수의 값을 설정
-        [myFraction setNumerator:1];
-        [myFraction setDenominator:3];
+        float f1 = 123.125, f2;
+        int i1, i2 = -150;
         
-        // print 메서드로 분수의 값을 표시
-        NSLog(@"The value of myFraction is : %i/%i",
-              [myFraction numerator], [myFraction denominator]);
-        //[myFraction print];
+        i1 = f1;
+        NSLog(@"%f assigned to an int produces %i", f1, i1);
+        
+        f1 = i2;
+        NSLog(@"%i assigned to an int produces %f", i2, f1);
+        
+        f1 = i2/100;
+        NSLog(@"%i assigned to an int produces %f", i2, f1);
+        
+        f2 = i2/100.0;
+        NSLog(@"%i assigned to an int produces %f", i2, f2);
+        
+        f2 = (float)i2/100;
+        NSLog(@"(float) %i assigned to an int produces %f", i2, f2);
         
     }
     return 0;
