@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		080AEE911CF43D6900BBDEF5 /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 080AEE901CF43D6900BBDEF5 /* Fraction.m */; };
+		080AEE941CF43F0200BBDEF5 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 080AEE931CF43F0200BBDEF5 /* Calculator.m */; };
 		082225231CF3ED94002C5431 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 082225221CF3ED94002C5431 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,8 @@
 /* Begin PBXFileReference section */
 		080AEE8F1CF43D6900BBDEF5 /* Fraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
 		080AEE901CF43D6900BBDEF5 /* Fraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; };
+		080AEE921CF43F0200BBDEF5 /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		080AEE931CF43F0200BBDEF5 /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
 		0822251F1CF3ED94002C5431 /* ObjC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ObjC; sourceTree = BUILT_PRODUCTS_DIR; };
 		082225221CF3ED94002C5431 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,6 +66,8 @@
 				082225221CF3ED94002C5431 /* main.m */,
 				080AEE8F1CF43D6900BBDEF5 /* Fraction.h */,
 				080AEE901CF43D6900BBDEF5 /* Fraction.m */,
+				080AEE921CF43F0200BBDEF5 /* Calculator.h */,
+				080AEE931CF43F0200BBDEF5 /* Calculator.m */,
 			);
 			path = ObjC;
 			sourceTree = "<group>";
@@ -123,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				080AEE941CF43F0200BBDEF5 /* Calculator.m in Sources */,
 				082225231CF3ED94002C5431 /* main.m in Sources */,
 				080AEE911CF43D6900BBDEF5 /* Fraction.m in Sources */,
 			);
